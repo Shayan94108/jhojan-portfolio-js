@@ -1,0 +1,214 @@
+/* Estilo general de la pagina */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: black;
+    background-color: #f2f2f2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    }
+
+/* Cabecera */
+header {
+    padding: 25px;
+    text-align: center;
+    color: white;
+    background-color: #17324d;
+    position: sticky;
+    top: 0;
+    z-index: 1100;
+}
+
+/* Nombre del sitio */
+header p {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Lista del menu */
+nav ul {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Colocamos las opciones del menu en una linea */
+nav li {
+    display: inline-block;
+    margin: 5px;
+}
+
+/* Enlaces del menu */
+nav a {
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Resaltamos la pagina actual */
+nav a.activo {
+    background-color: #197a8d;
+}
+
+/* Cambiamos el fondo al pasar el raton */
+nav a:hover {
+    background-color: #197a8d;
+}
+
+/* Contenido principal centrado */
+main {
+    width: 90%;
+    margin: 30px auto;
+    flex: 1;
+    max-width: 1100px;
+}
+
+/* Secciones del contenido */
+section {
+    margin-bottom: 20px;
+    padding: 25px;
+    background-color: white;
+    border-left: 4px solid #197a8d;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Titulos */
+h1 {
+    margin-top: 0;
+    font-size: 30px;
+    color: #17324d;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #17324d;
+}
+
+/* Pie de pagina */
+footer {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: #17324d;
+}
+/* Organización de la galeria */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Cada proyecto de la galeria */
+.proyecto {
+    width: 250px;
+    margin: 15px;
+}
+
+/* Imágenes de los proyectos */
+.proyecto img {
+    width: 100%;
+    height: auto;
+}
+
+/* Títulos de los proyectos */
+.proyecto h2 {
+    margin-top: 15px;
+    font-size: 20px;
+}
+/* Separación entre los campos del formulario */
+.formulario p {
+    margin-bottom: 20px;
+}
+
+/* Cajas para escribir los datos */
+.campo {
+    display: block;
+    width: 90%;
+    margin-top: 5px;
+    padding: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    border: 1px solid #17324d;
+}
+
+/* Botón del formulario */
+.boton {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #197a8d;
+    border: none;
+    cursor: pointer;
+}
+
+/* Cambio de color al pasar el raton */
+.boton:hover {
+    background-color: #17324d;
+}
+/* Enlaces dentro del contenido */
+main a {
+    color: #197a8d;
+}
+
+/* Color de los enlaces al pasar el raton */
+main a:hover {
+    color: #17324d;
+}
+
+/* Imagen del mapa */
+.mapa {
+    display: block;
+    width: 90%;
+    height: 360px;
+    margin-top: 15px;
+}
+/* Separación de los textos del pie */
+footer p {
+    margin: 10px 0;
+}
+
+/* Enlaces del pie de página */
+footer a {
+    color: white;
+}
+
+/* Separación entre las redes sociales */
+.redes-sociales a {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+/* Tamaño de los logotipos */
+.redes-sociales img {
+    width: 32px;
+    height: 32px;
+}
+/* Ajustes para pantallas pequenas */
+@media (max-width: 480px) {
+    header,
+    footer {
+        padding: 15px;
+    }
+
+    main {
+        margin: 15px auto;
+    }
+
+    section {
+        padding: 16px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+    }
+}

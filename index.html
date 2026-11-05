@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Jhojan Sebastian, estudiante de diseno y programacion web.">
+    <title>Inicio | Jhojan Sebastian</title>
+
+    <!-- Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- Cabecera y menu de navegacion -->
+    <header>
+        <p>Jhojan Sebastian</p>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" class="activo">Inicio</a>
+                </li>
+                <li>
+                    <a href="views/galeria.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="views/presupuesto.html">Presupuesto</a>
+                </li>
+                <li>
+                    <a href="views/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal de la pagina -->
+    <main>
+
+        <!-- Presentacion -->
+        <section>
+            <h1>Diseno y desarrollo de paginas web</h1>
+            <p>
+                Soy Jhojan Sebastian y estoy aprendiendo a crear sitios web con
+                HTML y CSS. En este portfolio muestro ejercicios en los que
+                practico como organizar el contenido y crear paginas faciles de navegar.
+            </p>
+            <p>
+                En mi <a href="views/galeria.html">Portfolio</a> encontraras una
+                galeria con fotos de mis gatos. La cree para practicar como organizar
+                imagenes con HTML y CSS. Si tienes una idea para una pagina web,
+                puedes contarme que necesitas en la seccion de
+                <a href="views/presupuesto.html">Presupuesto</a>.
+            </p>
+        </section>
+
+        <!-- Servicios -->
+        <section>
+            <h2>Mis servicios</h2>
+            <p>
+                Diseno paginas web con HTML y CSS, cuidando
+                la organizacion del contenido y su presentacion.
+            </p>
+
+            <ul>
+                <li><strong>Paginas para pequenos negocios.</strong> Reunen sus
+                    servicios, horarios y datos de contacto en un solo lugar.</li>
+                <li><strong>Portfolios.</strong> Presentan cada trabajo con imagenes
+                    y una descripcion de lo que se hizo.</li>
+                <li><strong>Paginas adaptadas a moviles.</strong> Ajusto el menu,
+                    el texto y las imagenes para que se lean bien en pantallas pequenas.</li>
+            </ul>
+        </section>
+
+        <!-- Informacion personal -->
+        <section>
+            <h2>Sobre mi</h2>
+            <p>
+                Con este proyecto he practicado como organizar los archivos en
+                carpetas, enlazar varias paginas y comprobar los datos de un
+                formulario. Tambien he aprendido a mantener el pie de pagina al
+                fondo de la ventana aunque haya poco contenido.
+            </p>
+            <p>
+                Mi objetivo es seguir mejorando y crear paginas
+                claras, ordenadas y faciles de utilizar para tener un futuro aqui en espana.
+            </p>
+        </section>
+        <!-- Noticias que se cargaran desde el archivo JSON -->
+        <section>
+            <h2>Noticias</h2>
+            <div id="lista-noticias"></div>
+        </section>
+    </main>
+
+    <!-- Pie de pagina -->
+    <footer>
+        <p>&copy; 2026 Su Alumno Favorito Jhojan Sebastian.</p>
+
+        <p>
+            <strong>Dirección de referencia</strong><br>
+            Mercado Municipal, plaza del Mercado, 1,
+            12600 La Vall d’Uixó (Castellón).
+        </p>
+
+        <p>
+            <a href="mailto:shayan94108@gmail.com">
+                shayan94108@gmail.com
+            </a>
+        </p>
+
+        <!-- Enlaces a mis redes sociales -->
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/shayan94108">
+                <img src="assets/images/facebook.png" width="960" height="960" alt="Mi Facebook">
+            </a>
+
+            <a href="https://www.instagram.com/shayan94108/">
+                <img src="assets/images/instagram.png" width="512" height="512" alt="Mi Instagram">
+            </a>
+        </div>
+
+        <p>
+            <strong>Aviso legal:</strong>
+            Este sitio web es un proyecto academico de
+            Jhojan Sebastian Alipour Rivera.
+            El Mercado Municipal se muestra como punto de referencia para el ejercicio.
+        </p>
+
+        <p>
+            <a href="views/presupuesto.html#politica-privacidad">
+                Politica de privacidad
+            </a>
+        </p>
+    </footer>
+    <script src="js/noticias.js"></script>
+
+</body>
+</html>

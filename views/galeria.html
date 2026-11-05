@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galeria de mis seis gatos, creada como practica de HTML y CSS.">
+    <title>Portfolio | Jhojan Sebastian</title>
+
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+    <!-- Cabecera y menu de navegacion -->
+    <header>
+        <p>Jhojan Sebastian</p>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="galeria.html" class="activo">Portfolio</a>
+                </li>
+                <li>
+                    <a href="presupuesto.html">Presupuesto</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Galeria de mis gatos</h1>
+            <p>
+                Este es mi proyecto de galeria con HTML y CSS.
+                He utilizado fotografias de mis seis gatos,
+                que forman parte de mi familia.
+            </p>
+
+            <!-- Galeria de fotografias -->
+            <p id="controles-galeria" hidden>
+                <button type="button" class="boton" id="foto-anterior">Anterior</button>
+                <span id="contador-fotos" role="status"></span>
+                <button type="button" class="boton" id="foto-siguiente">Siguiente</button>
+            </p>
+            <div class="galeria">
+
+                <div class="proyecto">
+                    <img src="../assets/images/noel.jpeg" alt="Noel sentado sobre un mueble"
+                    width="1536" height="2048">
+                    <h2>Noel</h2>
+                    <p>Noel posando encima del mueble.</p>
+                </div>
+
+                <div class="proyecto">
+                    <img src="../assets/images/Teo.jpeg" alt="Teo dormido sobre una manta"
+                    width="1536" height="2048">
+                    <h2>Teo</h2>
+                    <p>Teo descansando comodamente en la manta.</p>
+                </div>
+
+                <div class="proyecto">
+                    <img src="../assets/images/lilo.jpeg" alt="Lilo mirando a la camara"
+                    width="1536" height="2048">
+                    <h2>Lilo</h2>
+                    <p>La unica nina de la casa.</p>
+                </div>
+
+                <div class="proyecto">
+                    <img src="../assets/images/Nikolayd.jpeg" alt="Primer plano de Nikolayd"
+                    width="1536" height="2048">
+                    <h2>Nikolayd</h2>
+                    <p>Nikolayd es el pequeno leon.</p>
+                </div>
+
+                <div class="proyecto">
+                    <img src="../assets/images/Stitch.jpeg" alt="Stitch sentado sobre la cama"
+                    width="1536" height="2048">
+                    <h2>Stitch</h2>
+                    <p>Stitch mirando mientras le hago una foto.</p>
+                </div>
+
+                <div class="proyecto">
+                    <img src="../assets/images/Ocane.jpeg" alt="Ocane descansando en el sofa"
+                    width="1536" height="2048">
+                    <h2>Ocane</h2>
+                    <p>Ocane descansando en el sofa de casa.</p>
+                </div>
+
+                <div class="proyecto">
+                    <img src="../assets/images/juntos.jpeg" alt="Mis seis gatos juntos en la habitacion"
+                    width="2048" height="1536">
+                    
+                    <h2>Todos juntos</h2>
+                    <p>Una fotografia de mis seis companeros de casa.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de pagina -->
+    <footer>
+        <p>&copy; 2026 Su Alumno Favorito Jhojan Sebastian.</p>
+
+        <p>
+            <strong>Dirección de referencia</strong><br>
+            Mercado Municipal, plaza del Mercado, 1,
+            12600 La Vall d’Uixó (Castellón).
+        </p>
+
+        <p>
+            <a href="mailto:shayan94108@gmail.com">
+                shayan94108@gmail.com
+            </a>
+        </p>
+
+        <!-- Enlaces a mis redes sociales -->
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/shayan94108">
+                <img src="../assets/images/facebook.png" alt="Mi Facebook"
+                width="960" height="960">
+            </a>
+
+            <a href="https://www.instagram.com/shayan94108/">
+                <img src="../assets/images/instagram.png" alt="Mi Instagram"
+                width="512" height="512">
+            </a>
+        </div>
+
+        <p>
+            <strong>Aviso legal:</strong>
+            Este sitio web es un proyecto academico de
+            Jhojan Sebastian Alipour Rivera.
+            El Mercado Municipal se muestra como punto de referencia para el ejercicio.
+        </p>
+
+        <p>
+            <a href="presupuesto.html#politica-privacidad">
+                Politica de privacidad
+            </a>
+        </p>
+    </footer>
+        <script src="../js/galeria.js"></script>
+</body>
+</html>

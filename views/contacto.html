@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Datos de contacto de Jhojan Sebastian Alipour Rivera, en La Vall d’Uixó.">
+    <title>Contacto | Jhojan Sebastian</title>
+
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin="anonymous" defer></script>
+        <script src="../js/contacto.js" defer></script>
+</head>
+<body>
+
+    <!-- Cabecera y menu de navegacion -->
+    <header>
+        <p>Jhojan Sebastian</p>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="galeria.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="presupuesto.html">Presupuesto</a>
+                </li>
+                <li>
+                    <a href="contacto.html" class="activo">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Datos de contacto -->
+        <section>
+            <h1>Contacto</h1>
+
+            <p>
+                Si quieres hablar conmigo sobre una pagina web,
+                puedes contactar a traves de estos datos.
+            </p>
+
+            <p>
+                <strong>Nombre:</strong>
+                Jhojan Sebastian Alipour Rivera
+            </p>
+
+            <p>
+                <strong>Correo electronico:</strong>
+                <a href="mailto:shayan94108@gmail.com">
+                    shayan94108@gmail.com
+                </a>
+            </p>
+
+            <p>
+                <strong>Telefono:</strong>
+                +34 647 91 46 30
+            </p>
+
+            <p>
+                <strong>Localidad:</strong>
+                La Vall d’Uixo, Castellon, Espana.
+            </p>
+
+            <p>
+                Tambien puedes completar el
+                <a href="presupuesto.html">formulario de presupuesto</a>.
+            </p>
+        </section>
+
+        <!-- Mapa de la localidad -->
+        <section>
+            <h2>Ubicación de referencia</h2>
+
+            <p>
+                Mercado Municipal, plaza del Mercado, 1,
+                12600 La Vall d’Uixó (Castellón).
+            </p>
+
+            <div id="mapa" class="mapa"></div>
+                <p>
+                <button type="button" id="calcular-ruta" class="boton">
+                    Calcular ruta hasta mi ubicación
+                </button>
+            </p>
+            <p id="estado-ruta" role="status"></p>
+        </section>
+
+    </main>
+
+    <!-- Pie de pagina -->
+    <footer>
+        <p>&copy; 2026 Su Alumno Favorito Jhojan Sebastian.</p>
+
+        <p>
+            <strong>Dirección de referencia</strong><br>
+            Mercado Municipal, plaza del Mercado, 1,
+            12600 La Vall d’Uixó (Castellón).
+        </p>
+
+        <p>
+            <a href="mailto:shayan94108@gmail.com">
+                shayan94108@gmail.com
+            </a>
+        </p>
+
+        <!-- Enlaces a mis redes sociales -->
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/shayan94108">
+                <img src="../assets/images/facebook.png" width="960" height="960" alt="Mi Facebook">
+            </a>
+
+            <a href="https://www.instagram.com/shayan94108/">
+                <img src="../assets/images/instagram.png" width="512" height="512" alt="Mi Instagram">
+            </a>
+        </div>
+
+        <p>
+            <strong>Aviso legal:</strong>
+            Este sitio web es un proyecto academico de
+            Jhojan Sebastian Alipour Rivera.
+            El Mercado Municipal se muestra como punto de referencia para el ejercicio.
+        </p>
+
+        <p>
+            <a href="presupuesto.html#politica-privacidad">
+                Politica de privacidad
+            </a>
+        </p>
+    </footer>
+</body>
+</html>
