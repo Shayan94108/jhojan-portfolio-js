@@ -10,9 +10,15 @@ const soloTelefono = /^[0-9]{1,9}$/;
 // Comprueba los datos cuando se pulsa Enviar solicitud.
 formulario.noValidate = true;
 
+const mensajeEnvio = document.getElementById("mensaje-envio");
+
+formulario.addEventListener("input", function () {
+    mensajeEnvio.textContent = "";
+});
+
 formulario.addEventListener("submit", function (evento) {
     evento.preventDefault();
-
+    mensajeEnvio.textContent = "";
     nombre.setCustomValidity("");
     apellidos.setCustomValidity("");
     telefono.setCustomValidity("");
@@ -40,7 +46,12 @@ formulario.addEventListener("submit", function (evento) {
     );
 
     if (formulario.reportValidity()) {
-        alert("Solicitud de prueba validada. Presupuesto total " + totalPresupuesto.value + ".");
+    const totalEnviado = totalPresupuesto.value;
+
+    formulario.reset();
+    calcularPresupuesto();
+
+    mensajeEnvio.textContent = "Solicitud de prueba validada. Presupuesto total " + totalEnviado + ".";
     }
 });
 const producto = document.getElementById("producto");
