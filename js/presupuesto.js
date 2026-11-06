@@ -46,12 +46,12 @@ formulario.addEventListener("submit", function (evento) {
     );
 
     if (formulario.reportValidity()) {
-    const totalEnviado = totalPresupuesto.value;
+        const totalEnviado = totalPresupuesto.value;
 
-    formulario.reset();
-    calcularPresupuesto();
+        formulario.reset();
+        calcularPresupuesto();
 
-    mensajeEnvio.textContent = "Solicitud de prueba validada. Presupuesto total " + totalEnviado + ".";
+        mensajeEnvio.textContent = "Solicitud de prueba validada. Presupuesto total " + totalEnviado + ".";
     }
 });
 const producto = document.getElementById("producto");
